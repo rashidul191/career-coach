@@ -36,7 +36,7 @@ const Header = () => {
             </Nav.Link>
 
             <Nav.Link className="mx-3">
-              <CustomLink to="/block">Block</CustomLink>
+              <CustomLink to="/blogs">Blogs</CustomLink>
             </Nav.Link>
 
             {user ? (
