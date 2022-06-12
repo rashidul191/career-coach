@@ -1,4 +1,5 @@
 import React from "react";
+// import { Nav } from "react-bootstrap";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -6,13 +7,13 @@ const Footer = () => {
     <div className="text-center py-5 mt-5 bg-dark">
       <p className="text-info">
         copyright &copy; {currentYear}{" "}
-        <a
+        {/* <Nav.Link
           className="text-warning"
           target="_blank"
           href="https://github.com/rashidul191"
         >
           Rashidul
-        </a>{" "}
+        </Nav.Link>{" "} */}
       </p>
     </div>
   );

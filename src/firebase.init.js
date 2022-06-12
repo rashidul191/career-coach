@@ -6,19 +6,19 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+//   apiKey: process.env.REACT_APP_apiKey,
+//   authDomain: process.env.REACT_APP_authDomain,
+//   projectId: process.env.REACT_APP_projectId,
+//   storageBucket: process.env.REACT_APP_storageBucket,
+//   messagingSenderId: process.env.REACT_APP_messagingSenderId,
+//   appId: process.env.REACT_APP_appId,
 
-  //   apiKey: "AIzaSyBX8N4kVkcc2TQN0JXkl-NYJhLKa2Kz2hg",
-  //   authDomain: "career-coach-8b2ea.firebaseapp.com",
-  //   projectId: "career-coach-8b2ea",
-  //   storageBucket: "career-coach-8b2ea.appspot.com",
-  //   messagingSenderId: "750786802274",
-  //   appId: "1:750786802274:web:cc69fccb8d4be4dfc0573b",
+    apiKey: "AIzaSyBX8N4kVkcc2TQN0JXkl-NYJhLKa2Kz2hg",
+    authDomain: "career-coach-8b2ea.firebaseapp.com",
+    projectId: "career-coach-8b2ea",
+    storageBucket: "career-coach-8b2ea.appspot.com",
+    messagingSenderId: "750786802274",
+    appId: "1:750786802274:web:cc69fccb8d4be4dfc0573b",
 };
 
 // Initialize Firebase
