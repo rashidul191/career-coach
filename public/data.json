@@ -1,0 +1,61 @@
+[
+  {
+    "id": "101",
+    "img": "service-1.jpg",
+    "name": "The Complete Digital Marketing Course",
+    "price": "75.99",
+    "videos": "120",
+    "duration": "22.5 hours",
+    "description": "With over 20 hours of training, quizzes and practical steps you can follow - this is one of the most comprehensive digital marketing courses available. We'll cover SEO, YouTube Marketing, Facebook Marketing, Google Adwords, Google Analytics and more!"
+  },
+
+  {
+    "id": "102",
+    "img": "service-2.jpg",
+    "name": "JavaScript Course 2022: From Zero to Expert!",
+    "price": "84.99",
+    "videos": "205",
+    "duration": "69 hours",
+    "description": "Really, really well made course. Super in-depth, with great challenges and projects that will solidify your Javascript understanding. I found the lectures were paced perfectly -- Jonas doesn't skip over anything that might be useful to a JS developer— Carson Bartholomew JavaScript is the most popular programming language in the world. It powers the entire modern web. It provides millions of high-paying jobs all over the world. That's why you want to learn JavaScript too. And you came to the right place!"
+  },
+
+  {
+    "id": "103",
+    "img": "service-3.jpg",
+    "name": "Video Editing Masterclass",
+    "price": "50.99",
+    "videos": "80",
+    "duration": "16.5 hours",
+    "description": "Do you want to learn how to edit your own amazing looking and sounding videos from home? Are you wanting to make more professional, unique, memorable, engaging, and impressive videos? Perfect! You've made it to the right video editing course! By the end of this course, you'll work right along with me to create your own INSTAGRAM MONTAGE, TIK TOK EDIT, YOUTUBE VLOG, SHOWCASE VIDEO, PROMOTIONAL VIDEO, COMMERCIAL, MUSIC VIDEO & DEMO REEL in all aspect ratios"
+  },
+
+  {
+    "id": "104",
+    "img": "service-4.jpg",
+    "name": "Masterclass: From Beginner to Pro Photo Editing",
+    "price": "54.99",
+    "videos": "90",
+    "duration": "37.5 hours",
+    "description": "Masterclass: From Beginner to Pro Photo Editing and Graphic Design A UDEMY BEST-SELLER WITH 10,000+ STUDENTS MORE GIMP CONTENT THAN ANY OTHER COURSE WITH 250+ LECTURES, OVER 36 HOURS OF CONTENT OVER 2,500 REVIEWS WITH A 4.6 STAR RATING - MORE REVIEWS THAN ANY OTHER GIMP COURSE THE FASTEST GROWING GIMP COURSE ON UDEMY It's finally time for you to master GIMP. Do you just wish you knew all of the great things GIMP had to offer (especially as an alternative to or replacement for Photoshop)? Have you taken photos with your camera but don't know how to edit them? Are you struggling to make your images look great or professional in GIMP? Are you curious as to what GIMP can offer as a graphic design program? Not sure which methods are best for getting professional results?"
+  },
+
+  {
+    "id": "105",
+    "img": "service-5.jpg",
+    "name": "The Content Writing Course",
+    "price": "84.99",
+    "videos": "95",
+    "duration": "15 hours",
+    "description": "How To Write Great Content Effortlessly If you struggle to easily write content that ranks on Google…regardless of your expertise, this is the most important page you’ll see today. I'll show you why in a minute. Everybody Knows Writing high-quality content quickly and easily that ranks on Google is next to impossible, right? Wrong! I haven't done any backlink building or ninja SEO stuff for any of my website articles, nor outsourced it to others... and I'm writing and publishing long-form high-quality articles at the rate of one per day that rank on Google! See what I'm doing differently - and how you can use the same method. The Content Writing Course"
+  },
+
+  {
+    "id": "106",
+    "img": "service-6.jpg",
+    "name": "English Master Course: English Grammar, English Speaking",
+    "price": "35.99",
+    "videos": "130",
+    "duration": "34.5 hours",
+    "description": "The English Master Course: Learn English Grammar, English Speaking, English Punctuation. Are you ready to master the English language? Are you tired of learning the same simple topics and never really getting better at English speaking or English grammar? This course will fix all those problems. This has been one of the top Udemy English courses for many years, and that is because we care about our students.The English master course covers all areas of English learning. English grammar, English speaking, and English writing (punctuation). There are over 35 hours of videos lessons, hundreds of examples and practice problems, and full-length PDFs."
+  }
+]
