@@ -1,23 +1,32 @@
 import React from "react";
 
 const Service = (props) => {
-  const { name, img, price, videos, duration, description } = props.course;
+  const { handleCheckOut, course } = props;
+  const { name, img, price, videos, duration, description, id } = course;
 
-  let shortDescription;
-  if(description.length > 50){
-    shortDescription = description.slice(0, 50)
-  }
   return (
     <div className="col">
       <div className="card">
-        <img src={require(`../../../../Images/services/${img}`)} alt="" />
+        {/* <img src={require(`../../../../Images/services/${img}`)} alt="" /> */}
+        <img className="img-fluid" src={img} alt="" />
         <div className="card-body">
-          <h4>{name}</h4>
-          <p>Price: $ {price}</p>
-          <p>Videos: {videos}</p>
-          <p>Duration: {duration}</p>
-          <p>{shortDescription}</p>
-          <button>Check Details</button>
+          <h5>{name}</h5>
+          <p className="m-0">
+            Price: $ <span className="text-warning">{price}</span>
+          </p>
+          <p className="m-0">
+            Videos: <span className="text-info">{videos} Hours</span>
+          </p>
+          <p>
+            Duration: <span className="text-success">{duration}</span>{" "}
+          </p>
+          <p>{description.slice(0, 50)}.....</p>
+          <button
+            onClick={() => handleCheckOut(id)}
+            className="btn btn-success"
+          >
+            Enroll Now
+          </button>
         </div>
       </div>
     </div>

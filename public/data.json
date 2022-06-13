@@ -1,7 +1,7 @@
 [
   {
     "id": "101",
-    "img": "service-1.jpg",
+    "img": "https://i.ibb.co/GCkn21c/service-1.jpg",
     "name": "The Complete Digital Marketing Course",
     "price": "75.99",
     "videos": "120",
@@ -11,7 +11,7 @@
 
   {
     "id": "102",
-    "img": "service-2.jpg",
+    "img": "https://i.ibb.co/zxf5z5K/service-2.jpg",
     "name": "JavaScript Course 2022: From Zero to Expert!",
     "price": "84.99",
     "videos": "205",
@@ -21,7 +21,7 @@
 
   {
     "id": "103",
-    "img": "service-3.jpg",
+    "img": "https://i.ibb.co/gRDzM8h/service-3.jpg",
     "name": "Video Editing Masterclass",
     "price": "50.99",
     "videos": "80",
@@ -31,7 +31,7 @@
 
   {
     "id": "104",
-    "img": "service-4.jpg",
+    "img": "https://i.ibb.co/NFm9rY8/service-4.jpg",
     "name": "Masterclass: From Beginner to Pro Photo Editing",
     "price": "54.99",
     "videos": "90",
@@ -41,7 +41,7 @@
 
   {
     "id": "105",
-    "img": "service-5.jpg",
+    "img": "https://i.ibb.co/sQR25tQ/service-5.jpg",
     "name": "The Content Writing Course",
     "price": "84.99",
     "videos": "95",
@@ -51,7 +51,7 @@
 
   {
     "id": "106",
-    "img": "service-6.jpg",
+    "img": "https://i.ibb.co/9cHv58C/service-6.jpg",
     "name": "English Master Course: English Grammar, English Speaking",
     "price": "35.99",
     "videos": "130",
