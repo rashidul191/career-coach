@@ -1,18 +1,36 @@
 # Career-Coach
-My project name is [career-coach]()
-Project live link [click-here]()
+My project name is [career-coach](https://career-coach-8b2ea.web.app/)
+Project live link [click-here](https://career-coach-8b2ea.web.app/) https://career-coach-8b2ea.web.app/
 
 
-### React Bootstrap
+## React Bootstrap
+My project use library React Bootstrap, Bootstrap
+
+## React Router
+My project use React Router. 
+`1. RequireAuth`
+`2. CustomLink`
+`3. `
 
 
-### React Router
+## react firebase hooks
+My project use react firebase hook first of all install # with npm
+`npm install --save react-firebase-hooks` thanks use Authentication Hooks
 
-### react firebase hooks
+`1. useAuthState`
+`2. useCreateUserWithEmailAndPassword`
+`3. useSignInWithEmailAndPassword`
+`4. useSignInWithGithub`
+`5. useSignInWithGoogle`
+`6. useUpdateProfile`
+`7. useSendPasswordResetEmail`
+`8. useSendEmailVerification`
 
-### react-toastify
+## react-toastify
+React toastiy use only forget password. when the user wants to change the password before giving the email address to the email field. that's why use react toastiy.
 
-### custom hook
+## custom hook
+use a custom hook. custom hook is very helpful change start and not ust duplicate code for multiply pages
 
 
 

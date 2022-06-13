@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import Loading from "../../Shared/Loading/Loading";
 
 const Login = () => {
+  const [emptyEmailField, setEmptyEmailField] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const emailRef = useRef("");
@@ -35,8 +36,10 @@ const Login = () => {
     if (email) {
       await sendPasswordResetEmail(email);
       toast("Sent email");
+      setEmptyEmailField(false);
     } else {
       toast("please enter email address");
+      setEmptyEmailField(true);
     }
   };
 
@@ -58,9 +61,15 @@ const Login = () => {
         className="w-50 mx-auto border border-3 border-info my-4 p-5"
       >
         <p className="text-danger text-center">{error?.message}</p>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+
+        <Form.Group className="mb-3 " controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
+            className={
+              emptyEmailField
+                ? "border border-4 border-warning"
+                : " border-none"
+            }
             ref={emailRef}
             type="email"
             name="email"

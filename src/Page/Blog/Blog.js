@@ -82,29 +82,27 @@ const Blog = () => {
           authentication?
         </h4>
         <p>
-          <span className="text-info">
-            Ans: Even though Firebase is all about great features, there are
-            some downsides to using it. Here are some of them.
-            <ul>
-              <li>Authentication System</li>
-              <li>Deploy Firebase</li>
-              <li>Not all its services are free to start</li>
-              <li>Only offers NoSQL databases</li>
-              <li>It has vendor lock-in</li>
-              <li>Slow queries</li>
-              <li>It runs entirely on Google Cloud</li>
-              <li>Doesn’t offer GraphQL APIs as part of the standard setup</li>
-              <li>
-                It’s a subdomain from Google so it doesn’t work in many
-                countries{" "}
-              </li>
-              <li>No options for Enterprise support or dedicated servers</li>
-              <li>
-                It’s not open source so it lacks flexibility and customization
-                to adapt its code
-              </li>
-            </ul>
-          </span>
+          <span className="text-info">Ans: </span>rewrites Even though Firebase is all
+          about great features, there are some downsides to using it. Here are
+          some of them.
+          <ul>
+            <li>Authentication System</li>
+            <li>Deploy Firebase</li>
+            <li>Not all its services are free to start</li>
+            <li>Only offers NoSQL databases</li>
+            <li>It has vendor lock-in</li>
+            <li>Slow queries</li>
+            <li>It runs entirely on Google Cloud</li>
+            <li>Doesn’t offer GraphQL APIs as part of the standard setup</li>
+            <li>
+              It’s a subdomain from Google so it doesn’t work in many countries{" "}
+            </li>
+            <li>No options for Enterprise support or dedicated servers</li>
+            <li>
+              It’s not open source so it lacks flexibility and customization to
+              adapt its code
+            </li>
+          </ul>
         </p>
       </div>
     </div>

@@ -1,36 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import SocialSignIn from "../SocialSignIn/SocialSignIn";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
 
 const Register = () => {
+  const [agree, setAgree] = useState(false);
   const navigate = useNavigate();
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+  const [updateProfile] = useUpdateProfile(auth);
 
   if (user) {
     navigate("/");
   }
 
   let errorElement;
-  const handleRegisterSubmitForm = (event) => {
+  const handleRegisterSubmitForm = async (event) => {
     event.preventDefault();
 
-    const name = event.target.name.value;
+    const displayName = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
     const confirmPassword = event.target.confirmPassword.value;
 
-    if (password === confirmPassword && password.length > 6) {
-      console.log(name, email, password, confirmPassword);
-      createUserWithEmailAndPassword(email, password);
+    if (
+      password === confirmPassword &&
+      password.length > 6 &&
+      /(?=.*[!@#$%^&*])/.test(password)
+    ) {
+      await createUserWithEmailAndPassword(email, password);
+      await updateProfile({ displayName });
     } else {
       errorElement = (
-        <p className="text-center text-danger">Password more then 6 letter</p>
+        <p className="text-center text-danger">
+          <ul>
+            <li>Password more then 6 letter</li>
+            <li>At least one special character.</li>
+          </ul>
+        </p>
       );
     }
   };
@@ -75,11 +90,29 @@ const Register = () => {
           />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Agree With Trams & Condition" />
+        <Form.Group
+          className={`mb-3 ${agree ? "text-success" : "text-danger"}`}
+          controlId="formBasicCheckbox"
+        >
+          <Form.Check
+            onClick={() => setAgree(!agree)}
+            type="checkbox"
+            name="terms"
+            label="Agree With Trams & Condition"
+          />
         </Form.Group>
 
-        <Button className="w-50" variant="primary" type="submit">
+        <ul>
+          <li>Password more then 6 letter</li>
+          <li>At least one special character.</li>
+        </ul>
+
+        <Button
+          disabled={!agree}
+          className="w-50"
+          variant="primary"
+          type="submit"
+        >
           Register
         </Button>
       </Form>
