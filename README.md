@@ -1,6 +1,6 @@
 # Career-Coach
-My project name is [career-coach](https://career-coach-8b2ea.web.app/)
-Project live link [click-here](https://career-coach-8b2ea.web.app/) https://career-coach-8b2ea.web.app/
+My project name is career-coach
+Project live link [click-here](https://career-coach-8b2ea.web.app/) => [https://career-coach-8b2ea.web.app/](https://career-coach-8b2ea.web.app/)
 
 
 ## React Bootstrap
@@ -10,7 +10,6 @@ My project use library React Bootstrap, Bootstrap
 My project use React Router. 
 `1. RequireAuth`
 `2. CustomLink`
-`3. `
 
 
 ## react firebase hooks
